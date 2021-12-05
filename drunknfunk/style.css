@@ -73,15 +73,14 @@ a {
     color: brown;
 }
 
-.header-background {
+.main-background {
     position: static;
     top: 0;
     display: block;
     overflow: visible;
     height: auto;
     min-height: 750px;
-    margin-bottom: 50px;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
     background-image: -webkit-gradient(linear, left top, left bottom, from(#b1b4bd));
     background-image: linear-gradient(180deg, rgba(241, 240, 234, 0.3), rgb(238, 229, 178, 0.3)), url('images/band_photo.jpg');
     opacity: 80%;
@@ -95,17 +94,18 @@ a {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 600px) {
-    .header-background {
+    .main-background {
+        background-attachment: fixed;
         position: static;
         top: 0;
         display: block;
         overflow: visible;
         height: auto;
         min-height: 750px;
-        margin-bottom: 50px;
         padding-bottom: 70px;
         background-image: -webkit-gradient(linear, left top, left bottom, from(#b1b4bd));
         background-image: linear-gradient(180deg, rgba(241, 240, 234, 0.5), rgb(238, 229, 178, 0.5)), url('images/band_photo.jpg');
@@ -127,7 +127,7 @@ a {
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
-    padding: 20px;
+    /* padding: 20px; */
     z-index: 1;
     align-self: auto;
     order: 0;
@@ -219,11 +219,6 @@ a {
     } */
 }
 
-
-/* .column-right {
-    padding-left: 6rem;
-} */
-
 .carousel-item img {
     margin-left: auto;
     max-width: 500px;
@@ -261,13 +256,7 @@ a {
     }
 }
 
-.column-left {
-    /* min-height: 500px; */
-    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#b1b4bd)); */
-    /* background-image: linear-gradient(180deg, rgba(241, 240, 234, 0), rgb(238, 229, 178, 0)), url('images/band4.jpg'); */
-    /* background-position: 0px 0px, 100% 50%;
-    background-size: auto, cover;
-    background-attachment: scroll, scroll;
-    object-fit: cover;
-    -o-object-fit: cover; */
+.second-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b1b4bd));
+    background-image: linear-gradient(180deg, rgba(241, 240, 234, 0.3), rgb(238, 229, 178, 0.3)), url('images/band1.jpg');
 }
